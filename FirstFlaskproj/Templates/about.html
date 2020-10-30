@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    {% if title %}
+    <title>BooksPosted-{{title}}</title>
+    {%else%}
+    <title>BooksPosted</title>
+    {% endif%}
   </head>
   <body>
     <h1>About Page</h1>

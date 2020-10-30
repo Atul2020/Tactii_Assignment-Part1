@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    {% if title %}
+    <title>BooksPosted-{{title}}</title>
+    {% else %}
+    <title>BooksPosted</title>
+    {% endif%}
   </head>
   <body>
-    <h1>Home Page</h1>
+    {% for post in posts %}
+      <h1>{{ post.Book_Name }}</h1>
+      <p>By {{post.Author}} on {{post.DatePostedonBlog}}</p>
+      <p>{{post.Price}}</p>
+    {% endfor %}
   </body>
 </html>
