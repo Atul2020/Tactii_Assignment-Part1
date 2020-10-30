@@ -1,0 +1,8 @@
+Day-1 [30-10-2020]:
+
+       1)Started learning Flask from the tutorial by Corey Schafer on Youtube.
+         The youtube link of the tutorial is: https://www.youtube.com/watch?v=MwZwr5Tvyxo&list=TLPQMzAxMDIwMjCxwnf_LWmEZA&index=1&ab_channel=CoreySchafer
+       2)Installed Flask today and created my first flask project.
+       3)Learned how to run Flask server and how to traverse through different routes.
+       4)Learned how to use templates in Flask.
+       
