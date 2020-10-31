@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    {% if title %}
-    <title>BooksPosted-{{title}}</title>
-    {%else%}
-    <title>BooksPosted</title>
-    {% endif%}
-  </head>
-  <body>
-    <h1>About Page</h1>
-  </body>
-</html>
+{% extends "layout.html" %}
+{% block content %}
+      <h1>About Page</h1>
+{% endblock content %}

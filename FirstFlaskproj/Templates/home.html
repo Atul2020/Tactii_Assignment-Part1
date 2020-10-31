@@ -1,17 +1,15 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    {% if title %}
-    <title>BooksPosted-{{title}}</title>
-    {% else %}
-    <title>BooksPosted</title>
-    {% endif%}
-  </head>
-  <body>
-    {% for post in posts %}
-      <h1>{{ post.Book_Name }}</h1>
-      <p>By {{post.Author}} on {{post.DatePostedonBlog}}</p>
-      <p>{{post.Price}}</p>
-    {% endfor %}
-  </body>
-</html>
+{% extends "layout.html" %}
+{% block content %}
+  {% for post in posts %}
+  <article class="media content-section">
+    <div class="media-body">
+      <div class="article-metadata">
+        <a class="mr-2" href="#">{{ post.Author }}</a>
+        <small class="text-muted">{{ post.DatePostedonBlog }}</small>
+      </div>
+      <h2><a class="article-title" href="#">{{ post.Book_Name }}</a></h2>
+      <p class="article-price">{{ post.Price }}</p>
+    </div>
+  </article>
+  {% endfor %}
+{% endblock content %}
