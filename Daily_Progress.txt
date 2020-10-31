@@ -29,5 +29,5 @@ Day-2 [31-10-2020]:
          
          https://www.youtube.com/watch?v=Ke4G-c94VBM&ab_channel=HiteshChoudhary
 	 
-       3)Went through till exercise 120 in numpy cheatsheet.
+       4)Went through till exercise 120 in numpy cheatsheet.
 
